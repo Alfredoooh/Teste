@@ -1,14 +1,7 @@
 {
   "name": "html-to-pdf-api",
   "version": "1.0.0",
-  "description": "API para conversão de HTML para PDF com alta fidelidade",
-  "main": "api/convert.js",
-  "scripts": {
-    "dev": "vercel dev"
-  },
-  "keywords": ["html", "pdf", "converter", "api"],
-  "author": "",
-  "license": "MIT",
+  "description": "API para conversão de HTML para PDF",
   "dependencies": {
     "chrome-aws-lambda": "^10.1.0",
     "puppeteer-core": "^21.11.0"
