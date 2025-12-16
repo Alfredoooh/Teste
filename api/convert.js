@@ -3,7 +3,7 @@ const puppeteer = require('puppeteer-core');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Use POST' });
+    return res.status(405).json({ error: 'Método não permitido. Use POST.' });
   }
 
   let browser = null;
@@ -29,10 +29,12 @@ module.exports = async (req, res) => {
 
     const page = await browser.newPage();
     await page.setContent(html, { waitUntil: 'networkidle0' });
+    
     const pdf = await page.pdf({ 
       format, 
       margin, 
-      printBackground 
+      printBackground,
+      preferCSSPageSize: true
     });
     
     await browser.close();
