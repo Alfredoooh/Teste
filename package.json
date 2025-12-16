@@ -4,6 +4,6 @@
   "description": "API para conversão de HTML para PDF",
   "dependencies": {
     "chrome-aws-lambda": "^10.1.0",
-    "puppeteer-core": "^21.11.0"
+    "puppeteer-core": "^10.1.0"
   }
 }
