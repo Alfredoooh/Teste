@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "API para conversão de HTML para PDF",
   "dependencies": {
-    "chrome-aws-lambda": "^10.1.0",
-    "puppeteer-core": "^10.1.0"
+    "@sparticuz/chromium": "^119.0.2",
+    "puppeteer-core": "^21.6.0"
   }
 }
