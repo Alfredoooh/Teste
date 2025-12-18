@@ -1,15 +1,14 @@
 {
   "name": "html-to-pdf-api",
-  "version": "1.0.0",
-  "description": "API de conversão HTML para PDF",
+  "version": "2.0.0",
+  "description": "API de conversão HTML para PDF com Puppeteer",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "./build.sh"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "playwright": "^1.40.0",
+    "puppeteer": "^21.6.1",
     "cors": "^2.8.5"
   },
   "engines": {
